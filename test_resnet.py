@@ -25,6 +25,7 @@ parser.add_argument('--gpu_ids', default='0', type=str, help='gpu_ids: e.g. 0  0
 #parser.add_argument('--test_dir', default='/home/zzd/Market/pytorch', type=str, help='./test_data')
 #parser.add_argument('--name', default='ft_ResNet50', type=str, help='save model path')
 parser.add_argument('--batchsize', default=64, type=int, help='batchsize')
+parser.add_argument('--PCB', default=False, type=bool, help='Remove the final fc layer and classifier layer')
 
 opt = parser.parse_args()
 
